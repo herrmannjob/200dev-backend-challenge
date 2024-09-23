@@ -1,7 +1,7 @@
 from datetime import timedelta
 from flask import Flask, jsonify
-from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
-from fake_services import check_health, get_admin_data, get_user_data
+from flask_jwt_extended import JWTManager, create_access_token
+from fake_services import check_health
 from auth import authenticate_user
 from users import user_bp
 from admin import admin_bp
